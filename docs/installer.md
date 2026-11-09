@@ -2,6 +2,10 @@
 
 ## Bananza 1.0.0 and 3.2.0
 
+For a single PowerShell command on Windows, see [one-command-windows-setup.md](one-click-windows-setup.md). It runs this same local installer against the player's own ExeFS and RomFS; the GitHub Actions workflow packages tools only and never receives game data.
+
+For a single PowerShell command on Windows, see [one-command-windows-setup.md](one-click-windows-setup.md). It runs this same local installer against the player's own ExeFS and RomFS; the GitHub Actions workflow packages tools only and never receives game data.
+
 The installer takes the game as one `.nup` file, or as an already dumped ExeFS (`main`, `sdk`, `rtld`, `main.npdm`)
 and either a loose RomFS folder or a folder containing `romfs.bin` and `index.json`. No keys are requested. Two builds
 are supported, each pinned by the SHA-256 of its ExeFS: base 1.0.0 (`dkb100`, `tools/data/expected-dkb100.json`) and
